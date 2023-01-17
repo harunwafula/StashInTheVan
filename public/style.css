@@ -1,6 +1,7 @@
 body {
     background-color: black;
     color: white;
+    
 }
 
 .background-img {
@@ -16,6 +17,11 @@ body {
     background-color: transparent;
 }
 
+
+.main-content {
+    height: 80vh;
+    width: 100%;
+}
 
 .divider {
     height: 2px;
@@ -108,6 +114,7 @@ body {
 
 #about-section {
     font-size: 18px;
+    width: 75vw;
 }
 
 @media only screen and (max-width : 720px) {
@@ -152,5 +159,9 @@ body {
 
     #about-section {
         width: 80vw;
+    }
+
+    .main-content{
+        height: auto;
     }
 }
