@@ -4,7 +4,7 @@ body {
 }
 
 .background-img {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: -2;
@@ -17,10 +17,20 @@ body {
 }
 
 
+.divider {
+    height: 2px;
+    width: 80vw;
+    background-color: white;
+    margin: 20px auto;
+}
+
 .mx-auto {
     margin: 0 auto;
 }
 
+.text-center {
+    text-align: center;
+}
 
 .row {
     display: flex;
@@ -88,7 +98,16 @@ body {
     width: 300px;
     font-size: 24px;
     padding: 15px 10px;
-    margin: 0 auto;
+    margin: 10px auto;
+}
+
+#footer {
+    width: 100vw;
+    height: 20vh;
+}
+
+#about-section {
+    font-size: 18px;
 }
 
 @media only screen and (max-width : 720px) {
@@ -118,8 +137,20 @@ body {
         display: none;
     }
 
+  
+
+    .social-btns {
+        width:80vw;
+    }
+
     .social-btn {
         width: 30px;
         height: 30px;
+        margin: 0 auto;
+        font-size: 24px;
+    }
+
+    #about-section {
+        width: 80vw;
     }
 }
