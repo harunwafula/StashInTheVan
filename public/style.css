@@ -1,7 +1,7 @@
 body {
     background-color: black;
     color: white;
-    
+    font-family: 'Comfortaa', cursive;;
 }
 
 .background-img {
@@ -15,8 +15,13 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: transparent;
+    
 }
 
+
+.song-list-container {
+    display: none;
+}
 
 .main-content {
     height: 80vh;
@@ -90,12 +95,60 @@ body {
     width: fit-content;
 }
 
+.card-title{
+    font-weight: 700;
+}
+
+.song-list-container .card{
+    margin : 10px 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.song-list-container .card .list {
+    width: 33%;
+    height: fit-content;
+    margin: 10px;
+}
+
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    cursor: pointer;
+    padding: 18px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .card-list{
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
+
+  .home-btn {
+    width: fit-content ;
+  }
+
+
+
 .btn {
     background-color: white;
+    color: black;
     padding: 10px;
     border-radius: 10px;
     text-align: center;
     display: flex;
+    cursor: pointer;
     justify-content: center;
     align-items: center;
 }
@@ -115,6 +168,26 @@ body {
 #about-section {
     font-size: 18px;
     width: 75vw;
+}
+
+.card {
+    color: black ;
+    padding: 3px;
+}
+
+.card ul {
+    list-style: none;
+    padding: 3px;
+}
+
+.card ul li {
+    border-bottom: 2px solid black;
+    padding: 10px 0px;
+}
+
+.card .list {
+    background-color: white;
+
 }
 
 @media only screen and (max-width : 720px) {
@@ -163,5 +236,10 @@ body {
 
     .main-content{
         height: auto;
+    }
+
+    .song-list-container .card{
+     
+        flex-direction: column;
     }
 }
