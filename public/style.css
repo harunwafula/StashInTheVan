@@ -242,4 +242,9 @@ body {
      
         flex-direction: column;
     }
+
+    .song-list-container .card .list {
+        width:  90%;
+        margin: 10px auto;
+    }
 }
